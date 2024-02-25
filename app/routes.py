@@ -21,14 +21,14 @@ def upload():
     if file:
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
         file.save(file_path)
-        # Call the data extraction script
+        
         csv_file_path = 'output.csv'
         main(file_path, csv_file_path)
-        # Read the CSV file
+        
         data = []
         with open(csv_file_path, 'r') as csv_file:
             data = csv_file.readlines()
-        # Pass the data to the result template
+        
         return render_template('result.html', data=data)
 
 if __name__ == '__main__':

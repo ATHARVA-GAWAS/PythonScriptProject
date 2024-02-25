@@ -1,4 +1,4 @@
-/* Global styles */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -20,7 +20,7 @@ p {
     line-height: 1.6;
 }
 
-/* Table styles */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -38,7 +38,7 @@ th {
     text-align: left;
 }
 
-/* Form styles */
+
 form {
     margin-bottom: 20px;
 }
